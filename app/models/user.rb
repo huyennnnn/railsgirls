@@ -5,4 +5,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :ideas
+  include Gravtastic
+  gravtastic
 end
